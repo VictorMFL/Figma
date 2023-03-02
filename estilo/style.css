@@ -210,14 +210,15 @@ main {
   padding: 2rem 3rem;
 }
 
-main .introducao {
-  margin-top: 2rem;
-  line-height: 1.8;
-}
-
 main .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  line-height: 1.8;
+  margin-top: 3rem;
+}
+
+.intro h1 {
+  font-size: 2rem;
 }
 
 .h1-fino {
@@ -264,4 +265,80 @@ main .intro {
   right: 0;
   top: 1553.82px;
   z-index: -1;
+}
+
+section.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  padding: 2.5rem 2rem;
+  background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fundo-img-card {
+  background-image: url(../imagens/Ellipse\ 4.png);
+  width: 219px;
+  height: 219px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundo-img-card > img {
+  border-radius: 50%;
+}
+
+.text-card {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.text-card > h2 {
+  margin-right: 10px;
+}
+
+.card > .detalhe {
+  display: block;
+  margin-left: 80px;
+  width: 10rem;
+  height: 1px;
+  border-bottom: 1px solid rgba(192, 183, 232, 0.33);
+}
+
+.text-detalhe {
+  margin: 2rem 0;
+}
+
+.botao-card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-card {
+  width: 154px;
+  height: 48px;
+  border: none;
+  text-align: left;
+  padding-left: 3px;
+  color: #000;
+  font-weight: 600;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn-card:hover {
+  color: #fff;
 }
