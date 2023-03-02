@@ -238,7 +238,7 @@ main .intro {
 }
 
 .img-arrow {
-  margin-left: -1.8rem;
+  margin-left: -1.9rem;
 }
 
 .introducao .about-hydra {
@@ -333,7 +333,7 @@ section.cards {
   border: none;
   text-align: left;
   padding-left: 3px;
-  color: #000;
+  color: var(--corPrincipal);
   font-weight: 600;
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
   border-radius: 40px;
@@ -399,4 +399,62 @@ section.tecnologias {
   right: 0;
   top: 2187px;
   z-index: -1;
+}
+
+.numeracao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.cada-num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sombra-num {
+  background: url(../imagens/Ellipse\ 7.png);
+  width: 198px;
+  height: 198px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-numero {
+  background: url(../imagens/Ellipse\ 8.png);
+  width: 159px;
+  height: 159px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-numero > h1 {
+  color: var(--corPrincipal);
+  font-size: 2rem;
+}
+
+.descricao-num {
+  display: flex;
+  align-items: center;
+}
+
+.descricao-num > img {
+  display: inline-block;
+}
+
+.descricao-num > h2 {
+  display: inline-block;
+}
+
+/* Contraste 15 */
+.contraste-15 {
+  position: absolute;
+right: 0;
+top: 3665px;
+z-index: -1;
 }
