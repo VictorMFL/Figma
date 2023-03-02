@@ -271,6 +271,7 @@ section.cards {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .card {
@@ -341,4 +342,61 @@ section.cards {
 
 .btn-card:hover {
   color: #fff;
+}
+
+section.tecnologias {
+  margin-top: 3rem;
+}
+
+.img-tecnologias {
+  width: 100%;
+  height: 303px;
+  background: url(../imagens/pexels-rodnae-productions-8097332\ 1.png);
+  box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+  border-radius: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.img-tecnologias > h1:nth-child(1) {
+  margin-top: 5rem;
+}
+
+.btn-tec {
+  position: relative;
+  top: 60px;
+  width: 100px;
+  height: 100px;
+  background: url(../imagens/Ellipse\ 6.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-btn-tec {
+  transform: translateX(35px);
+  background: url(../imagens/Ellipse\ 5.png);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.marcas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Contraste 14 */
+.contraste-14 {
+  position: absolute;
+  right: 0;
+  top: 2187px;
+  z-index: -1;
 }
