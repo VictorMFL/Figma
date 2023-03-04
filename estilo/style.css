@@ -82,6 +82,10 @@ nav ul li {
   margin-left: 2rem;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 section.title {
   margin-top: 6rem;
   display: flex;
@@ -125,14 +129,18 @@ span {
   cursor: pointer;
 }
 
+.contraste-foto {
+  background: url(../imagens/Rectangle\ 4.png) rgba(0, 0, 0, 0.13);
+  width: 524px;
+  height: 455px;
+  border-radius: 100px 100px 100px 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .img {
-  position: absolute;
-  margin-top: 10px;
-  right: 60px;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 220px;
-  border-bottom-right-radius: 80px;
+  border-radius: 100px 100px 100px 240px;
 }
 
 menu {
@@ -385,6 +393,12 @@ section.tecnologias {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 1s;
+}
+
+.img-btn-tec:hover {
+  transform: initial;
+  transition: 1s;
 }
 
 .marcas {

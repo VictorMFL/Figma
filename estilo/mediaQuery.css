@@ -1,0 +1,136 @@
+@media (max-width: 1200px) {
+  section.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-mobile {
+    width: 33px;
+    height: 26px;
+    display: block;
+    background: url(../imagens/Hamburger-Button.png);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    color: var(--cortexto);
+    margin: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .contato {
+    display: none;
+  }
+
+  .contato .contact-us {
+    background-color: transparent;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: var(--cortexto);
+    margin-left: 4rem;
+    cursor: pointer;
+  }
+
+  .contato .contact-us:hover {
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    border: none;
+  }
+
+  .contato .join {
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+
+  menu {
+    font-size: 0.7rem;
+  }
+
+  .formas-contato {
+    padding: 0 1rem;
+  }
+
+  .formas-contato > img {
+    margin: 0;
+  }
+
+  .intro h1 {
+    font-size: 1.4rem;
+  }
+
+  .h1-fino {
+    font-weight: 100;
+    margin-top: 20px;
+  }
+
+  .about-hydra > div > p {
+    padding: 1rem 0.5rem;
+  }
+
+  section.cards {
+    justify-content: center;
+  }
+
+  .card:nth-child(4) {
+    display: none;
+  }
+
+  .card:nth-child(5) {
+    display: none;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  .marcas > img {
+    max-width: 150px;
+  }
+
+  .back-numero > h1 {
+    font-size: 1.5rem;
+  }
+
+  .descricao-num > h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  input {
+    width: 98%;
+  }
+
+  .detalhe-footer > ul {
+    padding: 0.5rem;
+  }
+
+  .icones-redes-sociais {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .icones-redes-sociais > img {
+    margin: 0 0.3rem;
+  }
+
+  footer > img.contraste-17 {
+    max-width: 100%;
+  }
+
+  .consideracao-final {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .consideracao-final > p {
+    font-size: 0.7rem;
+  }
+}
