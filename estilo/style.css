@@ -16,6 +16,10 @@
   --cortexto: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--corPrincipal);
 }
@@ -44,7 +48,8 @@ nav ul {
   display: flex;
 }
 
-nav ul li {
+nav ul li a{
+  text-decoration: none;
   color: var(--cortexto);
   margin: 0.8rem;
   font-weight: bold;
@@ -82,7 +87,15 @@ nav ul li {
   margin-left: 2rem;
 }
 
+.menu-hamburguer {
+  display: none;
+}
+
 .menu-mobile {
+  display: none;
+}
+
+.navegacao-mobile {
   display: none;
 }
 
@@ -278,7 +291,7 @@ main .intro {
 section.cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
 }
 
@@ -291,6 +304,26 @@ section.cards {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0.5rem;
+}
+
+section.cards .cards-1-2{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+section.cards .cards-3-4{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+section.cards .cards-1-2 .voltar img {
+  display: none;
+}
+section.cards .cards-3-4 .voltar img {
+  display: none;
 }
 
 .fundo-img-card {

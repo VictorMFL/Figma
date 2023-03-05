@@ -1,18 +1,80 @@
 @media (max-width: 1200px) {
+  /* Navegação */
   section.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .menu-mobile {
-    width: 33px;
-    height: 26px;
+  .menu-hamburguer {
     display: block;
-    background: url(../imagens/Hamburger-Button.png);
+    cursor: pointer;
   }
 
-  nav ul {
+  .menu-mobile {
+    display: none;
+  }
+
+  .navegacao-mobile {
+    min-width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    background-color: var(--corPrincipal);
+    opacity: 0;
+    transform: translateX(20px);
+    animation: animeLeft 0.8s forwards;
+  }
+
+  @keyframes animeLeft {
+    to {
+      transform: initial;
+      opacity: 0.9;
+    }
+  }
+
+  .navegacao-mobile > .contato-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-mobile > .ul-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contato-mobile .contact-us {
+    background-color: transparent;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: var(--cortexto);
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+
+  .contato-mobile .contact-us:hover {
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  }
+
+  .contato-mobile .join {
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .nav > nav {
     display: none;
   }
 
@@ -23,33 +85,17 @@
     font-size: 1rem;
   }
 
+  .material-symbols-outlined {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
   .contato {
     display: none;
   }
-
-  .contato .contact-us {
-    background-color: transparent;
-    padding: 1rem;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    color: var(--cortexto);
-    margin-left: 4rem;
-    cursor: pointer;
-  }
-
-  .contato .contact-us:hover {
-    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-    border: none;
-  }
-
-  .contato .join {
-    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-    padding: 1rem;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-left: 2rem;
-  }
+  /* Fim da Navegação */
 
   menu {
     font-size: 0.7rem;
@@ -80,11 +126,50 @@
     justify-content: center;
   }
 
-  .card:nth-child(4) {
-    display: none;
+  section.cards .cards-1-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .card:nth-child(5) {
+  .passar-mobile {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards-1-2 .back-passar {
+    background: url(../imagens/Ellipse\ 6.png);
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .back-passar .voltar {
+    background: url(../imagens/Ellipse\ 5.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  section.cards .cards-1-2 .voltar img {
+    display: block;
+  }
+  section.cards .cards-3-4 .voltar img {
+    display: block;
+  }
+
+  section.cards .cards-3-4 {
     display: none;
   }
 
@@ -96,6 +181,18 @@
     max-width: 150px;
   }
 
+  .numeracao {
+    padding: 0 4rem;
+  }
+
+  .cada-num:nth-child(4) {
+    display: none;
+  }
+
+  .cada-num:nth-child(5) {
+    display: none;
+  }
+
   .back-numero > h1 {
     font-size: 1.5rem;
   }
@@ -103,6 +200,10 @@
   .descricao-num > h2 {
     font-size: 1.1rem;
     font-weight: 500;
+  }
+
+  .join-form > img {
+    max-width: 100%;
   }
 
   input {
@@ -114,7 +215,7 @@
   }
 
   .icones-redes-sociais {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 0;
   }
 
   .icones-redes-sociais > img {
