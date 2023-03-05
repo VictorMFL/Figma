@@ -120,6 +120,24 @@
     justify-content: center;
   }
 
+  .cards-desktop {
+    display: none;
+  }
+
+  .passar-mobile-cards {
+    display: block;
+  }
+  
+  .cards-1-2 {
+    display: block;
+  }
+  
+  .cards-3-4 {
+    display: block;
+  }
+
+  
+
   section.cards .cards-1-2 {
     transform: translateX(-40px);
     opacity: 0;
@@ -203,6 +221,22 @@
   .numeracao {
     padding: 0 5rem;
     justify-content: center;
+  }
+
+  .numeracao-desktop {
+    display: none;
+  }
+
+  .passar-mobile-numeros {
+    display: block;
+  }
+  
+  .num-1-2 {
+    display: block;
+  }
+  
+  .num-3-4 {
+    display: block;
   }
 
   .passar-mobile-numeros {

@@ -292,11 +292,17 @@ section.cards {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin: 3rem 0;
+}
+
+.cards-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card {
-  width: 300px;
+  max-width: 300px;
   padding: 2.5rem 2rem;
   background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
   border-radius: 40px;
@@ -307,22 +313,15 @@ section.cards {
   margin: 0.5rem;
 }
 
-section.cards .cards-1-2{
-  display: flex;
-  justify-content: center;
-  align-items: center ;
-}
-
-section.cards .cards-3-4{
-  display: flex;
-  justify-content: center;
-  align-items: center ;
-}
-
-section.cards .cards-1-2 .voltar img {
+.passar-mobile-cards {
   display: none;
 }
-section.cards .cards-3-4 .voltar img {
+
+.cards-1-2 {
+  display: none;
+}
+
+.cards-3-4 {
   display: none;
 }
 
@@ -448,11 +447,30 @@ section.tecnologias {
   z-index: -1;
 }
 
+/* Inicio Numereção */
 .numeracao {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
+}
+
+.numeracao-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.passar-mobile-numeros {
+  display: none;
+}
+
+.num-1-2 {
+  display: none;
+}
+
+.num-3-4 {
+  display: none;
 }
 
 .cada-num {
@@ -504,6 +522,8 @@ section.tecnologias {
   right: 0;
   z-index: -1;
 }
+/* Fim Numereção */
+
 
 section.formulario {
   width: 100%;
@@ -531,7 +551,7 @@ form {
 }
 
 input {
-  width: 48%;
+  width: 47%;
   display: inline-block;
   padding: 1rem;
   background: transparent;
