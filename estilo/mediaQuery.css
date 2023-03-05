@@ -28,14 +28,7 @@
     background-color: var(--corPrincipal);
     opacity: 0;
     transform: translateX(20px);
-    animation: animeLeft 0.8s forwards;
-  }
-
-  @keyframes animeLeft {
-    to {
-      transform: initial;
-      opacity: 0.9;
-    }
+    animation: animeLeftMenu 0.8s forwards;
   }
 
   .navegacao-mobile > .contato-mobile {
@@ -122,25 +115,53 @@
     padding: 1rem 0.5rem;
   }
 
+  /* Cards */
   section.cards {
     justify-content: center;
   }
 
   section.cards .cards-1-2 {
+    transform: translateX(-40px);
+    opacity: 0;
+    animation: animeLeft 0.8s forwards;
+  }
+
+  section.cards .cards-3-4 {
+    display: none;
+    transform: translateX(40px);
+    opacity: 0;
+    animation: animeLeft 0.8s forwards;
+  }
+
+  section.cards .cards-1-2 .itens-1-2 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .passar-mobile {
+  section.cards .cards-3-4 .itens-3-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .passar-mobile-cards {
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 4rem;
   }
 
-  .cards-1-2 .back-passar {
+  @media(max-width:953px) {
+    .passar-mobile-cards {
+      padding: 0;
+    }
+  }
+
+
+  .back-passar {
     background: url(../imagens/Ellipse\ 6.png);
     width: 92px;
     height: 92px;
@@ -150,7 +171,7 @@
     border-radius: 50%;
   }
 
-  .back-passar .voltar {
+  .voltar {
     background: url(../imagens/Ellipse\ 5.png);
     background-size: cover;
     width: 72px;
@@ -169,28 +190,61 @@
     display: block;
   }
 
-  section.cards .cards-3-4 {
-    display: none;
-  }
-
   .card {
     margin: 1rem;
   }
+  /* Fim dos Cards */
 
   .marcas > img {
     max-width: 150px;
   }
 
+  /* Inicio Numeração */
   .numeracao {
-    padding: 0 4rem;
+    padding: 0 5rem;
+    justify-content: center;
   }
 
-  .cada-num:nth-child(4) {
-    display: none;
+  .passar-mobile-numeros {
+    position: absolute;
+    width: 100%;
   }
 
-  .cada-num:nth-child(5) {
+  .passar-mobile-numeros .back-passar:nth-child(1) {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+  }
+
+  .passar-mobile-numeros .back-passar:nth-child(2) {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+  }
+
+  .num-1-2 {
+    transform: translateX(-40px);
+    opacity: 0;
+    animation: animeLeft 0.8s forwards;
+  }
+
+  .numeros-1-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .num-3-4 {
     display: none;
+    transform: translateX(40px);
+    opacity: 0;
+    animation: animeLeft 0.8s forwards;
+  }
+
+  .numeros-3-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .back-numero > h1 {
@@ -201,6 +255,7 @@
     font-size: 1.1rem;
     font-weight: 500;
   }
+  /* Fim Numereção */
 
   .join-form > img {
     max-width: 100%;
@@ -233,5 +288,19 @@
 
   .consideracao-final > p {
     font-size: 0.7rem;
+  }
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: 1;
+  }
+}
+
+@keyframes animeLeftMenu {
+  to {
+    transform: initial;
+    opacity: 0.9;
   }
 }
