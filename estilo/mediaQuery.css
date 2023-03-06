@@ -375,7 +375,7 @@
   }
 
   .contraste-2 {
-    left: 150px;
+    right: 0px;
   }
 
   .contraste-3 {
@@ -514,19 +514,291 @@
   /* Fim introdução */
 
   /* Inicio build */
-  .biuld-desktop > div {
-    display: none;
-  }
-
-  .build-mobile {
+  .build-hydra,
+  .with-hydra {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
+
+  .with-hydra {
+    margin-bottom: -3rem;
+  }
+
+  .build-hydra div.texto-intro {
+    display: none;
+  }
   /* Fim build */
 
   /* Inicio cards */
-  
+  .passar-mobile-cards {
+    display: none;
+  }
+
+  .cards-1-2 {
+    display: none;
+  }
+
+  .cards-3-4 {
+    display: none;
+  }
+
+  .cards-de-celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .passar-celular-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .back-passar {
+    background: url(../imagens/Ellipse\ 6.png);
+    width: 58px;
+    height: 58px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .voltar {
+    background: url(../imagens/Ellipse\ 5.png);
+    background-size: cover;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .passar-celular-cards > .back-passar:nth-child(1) {
+    position: absolute;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .passar-celular-cards > .back-passar:nth-child(2) {
+    position: absolute;
+    right: 1rem;
+  }
+
+  .card-2,
+  .card-3,
+  .card-4 {
+    display: none;
+  }
   /* Fim cards */
+
+  /* Inicio tecnologias */
+  section.tecnologias {
+    margin-top: 3rem;
+  }
+
+  .img-tecnologias {
+    height: 303px;
+    border-radius: 60px;
+    background-size: cover;
+  }
+
+  .img-tecnologias > h1:nth-child(1) {
+    margin-top: 2rem;
+  }
+
+  .btn-tec {
+    display: none;
+  }
+
+  .img-btn-tec {
+    display: none;
+  }
+
+  .marcas {
+    display: none;
+  }
+
+  .marcas-celular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .marca-2,
+  .marca-3,
+  .marca-4 {
+    display: none;
+  }
+
+  .contraste-14 {
+    display: none;
+  }
+  /* Fim tecnologias */
+
+  /* Inicio introdução */
+  .numeros > .build-hydra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+  .build-hydra > div h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .numeros div.texto-intro {
+    display: none;
+  }
+
+  .build-hydra img {
+    display: none;
+  }
+
+  .intro-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
+  /* Fim introdução */
+
+  /* Inicio númeração */
+  .numeracao {
+    display: none;
+  }
+  .numeracao-de-celular {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .back-numero > h1 {
+    font-size: 2rem;
+  }
+
+  .descricao-num > h2 {
+    font-weight: 700;
+    padding: 2rem 0;
+  }
+
+  .num-2,
+  .num-3,
+  .num-4 {
+    display: none;
+  }
+  /* Fim númeração */
+
+  /* inicio formulário */
+  section.formulario {
+    border-radius: 60px;
+  }
+
+  .join-form {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .join-form h1 {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+  }
+
+  .join-form .h1-fino {
+    text-align: center;
+  }
+
+  form {
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .subject {
+    width: 100%;
+  }
+
+  form > textarea {
+    width: 100%;
+  }
+
+  .btn-form {
+    width: 100%;
+  }
+  /* Fim formulário */
+
+  /* Inicio Footer */
+  footer .grid-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .icones-redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icones-redes-sociais > img {
+    display: block;
+  }
+
+  .contraste-17 {
+    display: block;
+  }
+
+  .contraste-18,
+  .contraste-19 {
+    display: block;
+    top: 4969px;
+    right: 0;
+  }
+
+  footer .grid-footer ul,
+  .detalhe-ul {
+    display: none;
+  }
+
+  footer img {
+    display: none;
+  }
+
+  .empresa-vector {
+    display: block;
+    width: 185px;
+    height: 187px;
+  }
+
+  .consideracao-final {
+    display: none;
+  }
+
+  .consideracao-final-celular {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 2;
+  }
 }

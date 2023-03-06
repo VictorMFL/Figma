@@ -242,7 +242,9 @@ main {
 }
 
 /* Introdução */
-main .intro {
+main .intro-hydra,
+.build-hydra
+ {
   display: grid;
   grid-template-columns: 1fr 1fr;
   line-height: 1.8;
@@ -253,7 +255,7 @@ main .intro {
   display: none;
 }
 
-.intro h1 {
+.build-hydra h1 {
   font-size: 2rem;
 }
 
@@ -279,10 +281,6 @@ main .intro {
 /* Fim introdução */
 
 /* Inicio build */
-.build-mobile {
-  display: none;
-}
-
 .introducao .about-hydra {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -310,6 +308,10 @@ main .intro {
 }
 /* Fim build */
 
+/* Inicio cards */
+.cards-de-celular {
+  display: none;
+}
 section.cards {
   display: flex;
   align-items: center;
@@ -405,7 +407,10 @@ section.cards {
 .btn-card:hover {
   color: #fff;
 }
+/* Fim cards */
 
+
+/* Inicio Tecnologias */
 section.tecnologias {
   margin-top: 3rem;
 }
@@ -461,6 +466,10 @@ section.tecnologias {
   justify-content: space-between;
 }
 
+.marcas-celular {
+  display: none;
+}
+
 /* Contraste 14 */
 .contraste-14 {
   position: absolute;
@@ -468,8 +477,19 @@ section.tecnologias {
   top: 2187px;
   z-index: -1;
 }
+/* Fim Tecnologias */
+
 
 /* Inicio Numereção */
+/* Introdução dos números */
+.intro-mobile {
+  display: none;
+}
+
+.numeracao-de-celular {
+  display: none;
+}
+
 .numeracao {
   display: flex;
   align-items: center;
@@ -547,6 +567,7 @@ section.tecnologias {
 /* Fim Numereção */
 
 
+/* Inicio formulário */
 section.formulario {
   width: 100%;
   background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
@@ -615,6 +636,12 @@ form > textarea:focus {
   font-weight: 700;
   margin: 2rem 0;
 }
+/* Inicio formulário */
+
+/* Inicio Footer */
+.footer-celular {
+  display: none;
+}
 
 footer {
   padding: 2rem 3rem;
@@ -673,3 +700,8 @@ footer {
 .consideracao-final > p {
   font-size: 0.8rem;
 }
+
+.consideracao-final-celular {
+  display: none;
+}
+/* Fim Footer */
