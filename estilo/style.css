@@ -95,6 +95,10 @@ nav ul li a{
   display: none;
 }
 
+.title-mobile {
+  display: none;
+}
+
 .navegacao-mobile {
   display: none;
 }
@@ -156,6 +160,7 @@ span {
   border-radius: 100px 100px 100px 240px;
 }
 
+/* Formas de contato */
 menu {
   width: 100%;
   height: 167px;
@@ -171,6 +176,10 @@ menu {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   z-index: 1000;
+}
+
+.formas-contato-mobile {
+  display: none;
 }
 
 .formas-contato {
@@ -226,16 +235,22 @@ menu {
   top: 274px;
   z-index: -1;
 }
+/* Fim formas de contato */
 
 main {
   padding: 2rem 3rem;
 }
 
+/* Introdução */
 main .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   line-height: 1.8;
   margin-top: 3rem;
+}
+
+.introducao-mobile {
+  display: none;
 }
 
 .intro h1 {
@@ -260,6 +275,12 @@ main .intro {
 
 .img-arrow {
   margin-left: -1.9rem;
+}
+/* Fim introdução */
+
+/* Inicio build */
+.build-mobile {
+  display: none;
 }
 
 .introducao .about-hydra {
@@ -287,6 +308,7 @@ main .intro {
   top: 1553.82px;
   z-index: -1;
 }
+/* Fim build */
 
 section.cards {
   display: flex;

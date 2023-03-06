@@ -127,16 +127,14 @@
   .passar-mobile-cards {
     display: block;
   }
-  
+
   .cards-1-2 {
     display: block;
   }
-  
+
   .cards-3-4 {
     display: block;
   }
-
-  
 
   section.cards .cards-1-2 {
     transform: translateX(-40px);
@@ -172,12 +170,11 @@
     padding: 0 4rem;
   }
 
-  @media(max-width:953px) {
+  @media (max-width: 953px) {
     .passar-mobile-cards {
       padding: 0;
     }
   }
-
 
   .back-passar {
     background: url(../imagens/Ellipse\ 6.png);
@@ -230,11 +227,11 @@
   .passar-mobile-numeros {
     display: block;
   }
-  
+
   .num-1-2 {
     display: block;
   }
-  
+
   .num-3-4 {
     display: block;
   }
@@ -337,4 +334,199 @@
     transform: initial;
     opacity: 0.9;
   }
+}
+
+@media (max-width: 800px) {
+  /* inicio title */
+  header {
+    padding: 1rem 2rem;
+  }
+
+  section.title {
+    display: none;
+  }
+
+  .title-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 5rem;
+  }
+
+  .foto-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 318px;
+    height: 277px;
+    background: url(../imagens/Rectangle\ 4.png);
+    border-radius: 100px 100px 100px 240px;
+    margin: 4rem 0;
+  }
+
+  .foto-mobile > img {
+    width: 95%;
+    height: 95%;
+  }
+
+  .contraste-1 {
+    right: 10px;
+  }
+
+  .contraste-2 {
+    left: 150px;
+  }
+
+  .contraste-3 {
+    top: 310px;
+  }
+
+  .contraste-4 {
+    display: none;
+  }
+
+  .title-mobile > h1 {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .title-mobile > h1 > span {
+    font-size: 1.6rem;
+  }
+
+  .title-mobile > button {
+    color: #000;
+    font-weight: 700;
+  }
+  /* Fim title */
+
+  /* Inicio formas de contato */
+  header > menu {
+    display: none;
+  }
+  .formas-contato-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formas-de-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .formas-de-contato > img {
+    margin: 0 0.5rem;
+  }
+
+  .localizacao {
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: animeLeft 0.5s forwards;
+  }
+
+  .telefone {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    transform: translateX(20px);
+    opacity: 0;
+    animation: animeLeft 0.5s forwards;
+  }
+
+  .email {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .btn-voltar-contato {
+    position: absolute;
+    left: 3rem;
+    cursor: pointer;
+  }
+
+  .btn-passar-contato {
+    position: absolute;
+    right: 3rem;
+    cursor: pointer;
+  }
+  /* Fim formas de contato */
+
+  main {
+    padding: 0 2rem;
+  }
+
+  /* Inicio introdução */
+  .introducao {
+    display: none;
+  }
+
+  .introducao-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .introducao-mobile > .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .intro > h1 {
+    font-size: 2rem;
+  }
+
+  .introducao-mobile > img {
+    width: 336.79px;
+    height: 358px;
+  }
+
+  .introducao-mobile > p {
+    line-height: 1.5;
+  }
+
+  .introducao-mobile > button {
+    margin: 2rem 0;
+    color: #000;
+    font-weight: 700;
+  }
+  /* Fim introdução */
+
+  /* Inicio build */
+  .biuld-desktop > div {
+    display: none;
+  }
+
+  .build-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* Fim build */
+
+  /* Inicio cards */
+  
+  /* Fim cards */
 }

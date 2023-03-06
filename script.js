@@ -1,15 +1,6 @@
+// Menu
 let btnHamburguer = document.querySelector(".menu-hamburguer")
 let menuMobile = document.querySelector(".menu-mobile")
-
-
-let primeiroSegundoCards = document.querySelector(".cards-1-2") 
-let terceiroQuartoCards = document.querySelector(".cards-3-4") 
-let passarCard = document.querySelector(".passarCard")
-
-
-let primeiroSegundoNum = document.querySelector(".num-1-2")
-let terceiroQuartoNum = document.querySelector(".num-3-4")
-let passarNum = document.querySelector(".passarNum")
 
 // Abre Menu
 function abrirMenu() {
@@ -24,6 +15,11 @@ function fecharMenu() {
 }
 
 
+// Cards
+let primeiroSegundoCards = document.querySelector(".cards-1-2") 
+let terceiroQuartoCards = document.querySelector(".cards-3-4") 
+let passarCard = document.querySelector(".passarCard")
+
 // Volta Cards
 function voltarCard() {
     terceiroQuartoCards.style.display = 'none'
@@ -36,6 +32,12 @@ function passarCards() {
     primeiroSegundoCards.style.display = 'none'
 }
 
+
+// Números
+let primeiroSegundoNum = document.querySelector(".num-1-2")
+let terceiroQuartoNum = document.querySelector(".num-3-4")
+let passarNum = document.querySelector(".passarNum")
+
 // Passa Números
 function passarNumeros() {
     primeiroSegundoNum.style.display = 'none'
@@ -46,4 +48,22 @@ function passarNumeros() {
 function voltarNumeros() {
     primeiroSegundoNum.style.display = 'block'
     terceiroQuartoNum.style.display = 'none'
+}
+
+
+// Formas de Contato
+let localizacao = document.querySelector(".localizacao")
+let telefone = document.querySelector(".telefone")
+let email = document.querySelector(".email")
+
+// Passar formas de contato
+function passarContato() {
+    telefone.style.display = 'flex'
+    localizacao.style.display = 'none'
+}
+
+// Voltar formas de contato
+function voltarContato() {
+    telefone.style.display = 'none'
+    localizacao.style.display = 'flex'
 }
