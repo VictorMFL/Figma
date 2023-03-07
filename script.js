@@ -20,18 +20,6 @@ let telefone = document.querySelector(".telefone");
 let email = document.querySelector(".email");
 let passarCell = 0;
 
-// Passar formas de contato de tablet
-function passarContato() {
-  localizacao.style.display = "none";
-  telefone.style.display = "flex";
-}
-
-// Voltar formas de contato de tablet
-function voltarContato() {
-  telefone.style.display = "none";
-  localizacao.style.display = "flex";
-}
-
 // Formas de contato de celular
 function passarContatoCel() {
   if (passarCell === 3) {
@@ -84,20 +72,44 @@ let card2 = document.querySelector(".card-2");
 let card3 = document.querySelector(".card-3");
 let card4 = document.querySelector(".card-4");
 let passarCardCell = 0;
-
-// Volta Cards de tablet
-function voltarCard() {
-  terceiroQuartoCards.style.display = "none";
-  primeiroSegundoCards.style.display = "block";
-}
+let passarCardTablet = 0;
 
 // Passa Cards de tablet
 function passarCards() {
-  primeiroSegundoCards.style.display = "none";
-  terceiroQuartoCards.style.display = "block";
+  if (passarCardTablet === 2) {
+    passarCardTablet = 0;
+  }
+
+  passarCardTablet++;
+
+  if (passarCardTablet === 1) {
+    primeiroSegundoCards.style.display = "none";
+    terceiroQuartoCards.style.display = "block";
+  } else {
+    terceiroQuartoCards.style.display = "none";
+    primeiroSegundoCards.style.display = "block";
+  }
+}
+
+// Volta Cards de tablet
+function voltarCard() {
+    if (passarCardTablet === 0) {
+        passarCardTablet = 2;
+      }
+    
+      passarCardTablet--;
+    
+      if (passarCardTablet === 1) {
+        primeiroSegundoCards.style.display = "none";
+        terceiroQuartoCards.style.display = "block";
+      } else {
+        terceiroQuartoCards.style.display = "none";
+        primeiroSegundoCards.style.display = "block";
+      }
 }
 
 // Cards de Celular
+// Passa Cards de celular
 function passarCardCelular() {
   if (passarCardCell === 4) {
     passarCardCell = 0;
@@ -127,6 +139,7 @@ function passarCardCelular() {
   }
 }
 
+// Volta Cards de celular
 function voltarCardCelular() {
   if (passarCardCell === 0) {
     passarCardCell = 4;
@@ -156,13 +169,14 @@ function voltarCardCelular() {
   }
 }
 
-//Marcas de celular
+// Marcas de celular
 let marca1 = document.querySelector(".marca-1");
 let marca2 = document.querySelector(".marca-2");
 let marca3 = document.querySelector(".marca-3");
 let marca4 = document.querySelector(".marca-4");
 let passarMarcasCell = 0;
 
+// Passa a marca
 function passarMarcas() {
   if (passarMarcasCell === 4) {
     passarMarcasCell = 0;
@@ -192,6 +206,7 @@ function passarMarcas() {
   }
 }
 
+// Volta a marca
 function voltarMarcas() {
   if (passarMarcasCell === 0) {
     passarMarcasCell = 4;
@@ -229,20 +244,42 @@ let num2 = document.querySelector(".num-2");
 let num3 = document.querySelector(".num-3");
 let num4 = document.querySelector(".num-4");
 let passarNum = 0;
+let passarNumTablet = 0;
 
 // Passa Números de tablet
 function passarNumeros() {
-  primeiroSegundoNum.style.display = "none";
-  terceiroQuartoNum.style.display = "block";
+  if (passarNumTablet === 2) {
+    passarNumTablet = 0;
+  }
+  passarNumTablet++;
+
+  if (passarNumTablet === 1) {
+    primeiroSegundoNum.style.display = "none";
+    terceiroQuartoNum.style.display = "block";
+  } else {
+    terceiroQuartoNum.style.display = "none";
+    primeiroSegundoNum.style.display = "block";
+  }
 }
 
 // Volta Números de tablet
 function voltarNumeros() {
-  primeiroSegundoNum.style.display = "block";
-  terceiroQuartoNum.style.display = "none";
+  if (passarNumTablet === 0) {
+    passarNumTablet = 2;
+  }
+  passarNumTablet--;
+
+  if (passarNumTablet === 1) {
+    primeiroSegundoNum.style.display = "none";
+    terceiroQuartoNum.style.display = "block";
+  } else {
+    terceiroQuartoNum.style.display = "none";
+    primeiroSegundoNum.style.display = "block";
+  }
 }
 
 // Números de celular
+// passa Números de celular
 function passarNumerosCell() {
   if (passarNum === 4) {
     passarNum = 0;
@@ -272,31 +309,32 @@ function passarNumerosCell() {
   }
 }
 
+// Volta Números de celular
 function voltarNumerosCell() {
-    if (passarNum === 0) {
-      passarNum = 4;
-    }
-    passarNum--;
-  
-    if (passarNum === 1) {
-      num1.style.display = "none";
-      num3.style.display = "none";
-      num4.style.display = "none";
-      num2.style.display = "flex";
-    } else if (passarNum === 2) {
-      num1.style.display = "none";
-      num2.style.display = "none";
-      num4.style.display = "none";
-      num3.style.display = "flex";
-    } else if (passarNum === 3) {
-      num1.style.display = "none";
-      num2.style.display = "none";
-      num3.style.display = "none";
-      num4.style.display = "block";
-    } else {
-      num2.style.display = "none";
-      num3.style.display = "none";
-      num4.style.display = "none";
-      num1.style.display = "block";
-    }
+  if (passarNum === 0) {
+    passarNum = 4;
   }
+  passarNum--;
+
+  if (passarNum === 1) {
+    num1.style.display = "none";
+    num3.style.display = "none";
+    num4.style.display = "none";
+    num2.style.display = "flex";
+  } else if (passarNum === 2) {
+    num1.style.display = "none";
+    num2.style.display = "none";
+    num4.style.display = "none";
+    num3.style.display = "flex";
+  } else if (passarNum === 3) {
+    num1.style.display = "none";
+    num2.style.display = "none";
+    num3.style.display = "none";
+    num4.style.display = "block";
+  } else {
+    num2.style.display = "none";
+    num3.style.display = "none";
+    num4.style.display = "none";
+    num1.style.display = "block";
+  }
+}
