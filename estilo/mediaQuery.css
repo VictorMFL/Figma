@@ -351,7 +351,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem 5rem;
   }
 
   .foto-mobile {
@@ -406,7 +405,7 @@
   header > menu {
     display: none;
   }
-  .formas-contato-mobile {
+  .formas-contato-celular {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -837,4 +836,28 @@
     padding: 1rem 0;
     line-height: 2;
   }
+}
+
+@media(max-width:438px) {
+  .formas-contato-celular > img {
+    z-index: 1000;
+  }
+
+  .formas-contato-celular > .formas-de-contato > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .formas-de-contato > .descricao-contato > h3 {
+    display: none;
+  }
+
+  .formas-de-contato > .descricao-contato > p {
+    font-size: 0.8rem;
+  }
+
+  .cards-de-celular > .passar-celular-cards {
+    z-index: 1000;
+  }
+
 }
