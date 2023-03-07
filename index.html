@@ -149,14 +149,14 @@
           src="imagens/voltar-forma-contato.png"
           alt="Botão voltar"
           class="btn-voltar-contato"
-          onclick="voltarContato()"
+          onclick="voltarContatoCel()"
         />
 
         <img
           src="imagens/passar-foma-contato.png"
           alt="Botão proximo"
           class="btn-passar-contato"
-          onclick="passarContato()"
+          onclick="passarContatoCel()"
         />
 
         <div class="formas-de-contato localizacao">
@@ -312,7 +312,7 @@
         />
 
         <!-- Inicio Cards de tablet -->
-        <div class="passar-mobile-cards">
+        <div class="passar-tablet-cards">
           <div class="back-passar">
             <div class="voltar volt-1" onclick="voltarCard()">
               <img src="imagens/voltar.png" alt="botão voltar" />
@@ -430,13 +430,13 @@
         <div class="cards-de-celular">
           <div class="passar-celular-cards">
             <div class="back-passar">
-              <div class="voltar volt-1" onclick="voltarCard()">
+              <div class="voltar volt-1" onclick="voltarCardCelular()">
                 <img src="imagens/voltar.png" alt="botão voltar" />
               </div>
             </div>
 
             <div class="back-passar">
-              <div class="voltar passarCard" onclick="passarCards()">
+              <div class="voltar passarCard" onclick="passarCardCelular()">
                 <img src="imagens/passar.png" alt="botão passar" />
               </div>
             </div>
@@ -660,13 +660,13 @@
         <div class="marcas-celular">
           <div class="passar-celular-cards">
             <div class="back-passar">
-              <div class="voltar volt-1" onclick="voltarCard()">
+              <div class="voltar volt-1" onclick="voltarMarcas()">
                 <img src="imagens/voltar.png" alt="botão voltar" />
               </div>
             </div>
 
             <div class="back-passar">
-              <div class="voltar passarCard" onclick="passarCards()">
+              <div class="voltar passarCard" onclick="passarMarcas()">
                 <img src="imagens/passar.png" alt="botão passar" />
               </div>
             </div>
@@ -819,25 +819,25 @@
 
         <!-- Inicio númereção de celular -->
         <div class="numeracao-de-celular">
-          <div class="num-1">
-            <div class="cada-num">
-              <div class="sombra-num">
-                <div class="back-numero">
-                  <h1>01</h1>
-                </div>
+          <div class="passar-celular-cards">
+            <div class="back-passar">
+              <div class="voltar volt-1" onclick="voltarNumerosCell()">
+                <img src="imagens/voltar.png" alt="botão voltar" />
               </div>
-              <div class="descricao-num">
-                <div class="passar-celular-cards">
-                  <div class="back-passar">
-                    <div class="voltar volt-1" onclick="voltarCard()">
-                      <img src="imagens/voltar.png" alt="botão voltar" />
-                    </div>
-                  </div>
-      
-                  <div class="back-passar">
-                    <div class="voltar passarCard" onclick="passarCards()">
-                      <img src="imagens/passar.png" alt="botão passar" />
-                    </div>
+            </div>
+
+            <div class="back-passar">
+              <div class="voltar passarCard" onclick="passarNumerosCell()">
+                <img src="imagens/passar.png" alt="botão passar" />
+              </div>
+            </div>
+          </div>
+          <div class="descricao-num">
+            <div class="num-1">
+              <div class="cada-num">
+                <div class="sombra-num">
+                  <div class="back-numero">
+                    <h1>01</h1>
                   </div>
                 </div>
                 <h2>
@@ -855,13 +855,10 @@
                   <h1>02</h1>
                 </div>
               </div>
-              <div class="descricao-num">
-                <img src="imagens/arrow-small-right.png" alt="icon-seta" />
-                <h2>
-                  Interaction <br />
-                  Design
-                </h2>
-              </div>
+              <h2>
+                Interaction <br />
+                Design
+              </h2>
             </div>
           </div>
 
@@ -872,13 +869,10 @@
                   <h1>03</h1>
                 </div>
               </div>
-              <div class="descricao-num">
-                <img src="imagens/arrow-small-right.png" alt="icon-seta" />
-                <h2>
-                  VR World <br />
-                  User Testing
-                </h2>
-              </div>
+              <h2>
+                VR World <br />
+                User Testing
+              </h2>
             </div>
           </div>
 
@@ -889,13 +883,10 @@
                   <h1>04</h1>
                 </div>
               </div>
-              <div class="descricao-num">
-                <img src="imagens/arrow-small-right.png" alt="icon-seta" />
-                <h2>
-                  Hydra VR <br />
-                  Deploy
-                </h2>
-              </div>
+              <h2>
+                Hydra VR <br />
+                Deploy
+              </h2>
             </div>
           </div>
         </div>
@@ -1008,7 +999,11 @@
       />
       <section class="grid-footer">
         <div class="detalhe-footer">
-          <img src="imagens/Vector.png" alt="empresa Vector" class="empresa-vector" />
+          <img
+            src="imagens/Vector.png"
+            alt="empresa Vector"
+            class="empresa-vector"
+          />
           <img src="imagens/Vector 20.png" alt="contraste-20" />
         </div>
         <div class="detalhe-footer detalhe-ul">
@@ -1059,7 +1054,7 @@
       <!-- Consideração final de celular -->
       <div class="consideracao-final-celular">
         <p>2023 © HYDRA LANDING PAGE</p>
-        <p> BY ZINE. E. FALOUTI</p>
+        <p>BY ZINE. E. FALOUTI</p>
         <p>ALL RIGHTS RESERVED</p>
       </div>
     </footer>
