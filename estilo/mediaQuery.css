@@ -838,6 +838,7 @@
   }
 }
 
+/* Para telas pequenas */
 @media(max-width:438px) {
   .formas-contato-celular > img {
     z-index: 1000;
